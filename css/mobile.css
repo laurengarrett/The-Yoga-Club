@@ -1,0 +1,732 @@
+﻿/*CSS FOR SCREENS WITH MAX WIDTH OF 399PX*/
+@media screen and (max-width: 399px) {
+
+    /*GENERAL-------------------------------------------------*/
+    body {
+        font-family: 'Tw Cen MT';
+        font-size: 5vw;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+
+    a {
+        color: #fe5d26;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #f2c078;
+    }
+
+    hr {
+        width: 75%;
+        border: 0;
+        height: 2px;
+        background: #fe5d26;
+        background-image: linear-gradient(to right, white, #fe5d26, white);
+    }
+
+    .the-yoga-group {
+        font-size: 4vw;
+        color: #faedca;
+        background-color: #fe5d26;
+        padding: 4pt;
+    }
+
+    h2 {
+        color: #4ecf63;
+        text-align: center;
+    }
+
+    a.current {
+        font-size: 1.4em;
+    }
+
+    .header-link {
+        padding: 0;
+        margin: 0;
+        color: #4ecf63;
+    }
+    /*GENERAL-------------------------------------------------*/
+
+    /*LOGO----------------------------------------------------*/
+    .banner-flex {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        margin: auto;
+    }
+    /*LOGO----------------------------------------------------*/
+
+    /*NAVIGATION----------------------------------------------*/
+    .ul-flex {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    div a {
+        display: block;
+        list-style-type: none;
+        padding: 10px;
+    }
+    /*NAVIGATION----------------------------------------------*/
+
+    /*MEMBERSHIP----------------------------------------------*/
+    .membership-flex {
+        background: #faedca;
+        background-image: linear-gradient(to right, white, #faedca, white);
+        border-top: thin solid #fe5d26;
+        border-bottom: thin solid #fe5d26;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .membership-link {
+        color: #fe5d26;
+        text-decoration: none;
+        font-size: 9vw;
+    }
+
+    .membership-link:hover .membership-flex {
+        background: #fe5d26;
+        background-image: linear-gradient(to right, #c1dbb3, #c1dbb3, #c1dbb3 );
+        color: white;
+    }
+    /*MEMBERSHIP----------------------------------------------*/
+
+    /*PRODUCTS------------------------------------------------*/
+    .product-big-flex {
+        display: flex;
+        flex-direction: column;
+        color: #4ecf63;
+        margin-top: 20px;
+        border-top: thin solid #fe5d26;
+        border-bottom: thin solid #fe5d26;
+    }
+
+    #latest-products {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .product-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .product-child {
+        margin: 5px;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .product-picture {
+        display: block;
+    }
+
+    .product-big-flex a {
+        color: #4ecf63;
+    }
+
+        .product-big-flex a:hover {
+            background-color: #c1dbb3;
+            color: white;
+        }
+
+    .product-child p {
+        display: none;
+    }
+    /*PRODUCTS------------------------------------------------*/
+
+    /*UPCOMING & TUTORIAL-------------------------------------*/
+    .upcoming-tutorial-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*UPCOMING & TUTORIAL-------------------------------------*/
+
+    /*UPCOMING------------------------------------------------*/
+    .upcoming-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        color: #4ecf63;
+        background-color: #faedca;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #upcoming-text {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .upcoming-flex p {
+        line-height: 1em;
+        text-align: center;
+    }
+
+    .upcoming-flex-web {
+        display: none;
+    }
+    /*UPCOMING------------------------------------------------*/
+
+    /*CALENDAR------------------------------------------------*/
+    .calendar-tutorial-flex {
+        display: none;
+    }
+    /*CALENDAR------------------------------------------------*/
+
+    /*TUTORIAL------------------------------------------------*/
+    .tutorial-flex {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        border-top: thin solid #fe5d26;
+        border-bottom: thin solid #fe5d26;
+    }
+
+    .tutorial-text {
+        text-align: center;
+        margin: 10px;
+        color: #4ecf63;
+    }
+
+    .iframe-flex {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .iframe-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    /*TUTORIAL------------------------------------------------*/
+
+    /*FOOTER--------------------------------------------------*/
+    #social-1 {
+        order: 1;
+    }
+
+    #social-2 {
+        order: 2;
+    }
+
+    #social-3 {
+        order: 3;
+    }
+
+    .contact-info, space-between {
+        display: none;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    /*MEMBERSHIP / SURVEY FORMS and WELCOME-------------------*/
+    .form {
+        background-color: #faedca;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .form h2 {
+        text-align: center;
+        color: #4ecf63;
+    }
+
+    #q-1 {
+        display: block;
+    }
+
+    #q-2 {
+        display: none;
+    }
+
+    #q-3 {
+        display: none;
+    }
+
+    #q-4 {
+        display: none;
+    }
+
+    #q-5 {
+        display: none;
+    }
+
+    .form-child {
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    #form-basic-info label {
+        display: block;
+        color: #f2c078;
+    }
+
+    .form input {
+        border: none;
+        width: 100%;
+        background-color: white;
+        height: 20px;
+    }
+
+    input::placeholder {
+        color: #c1dbb3;
+    }
+
+    .form select {
+        border: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    #form-basic-info button {
+        border: none;
+        background-color: #fe5d26;
+        width: 100%;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .form h2 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    textarea {
+        border: none;
+        width: 100%;
+    }
+
+    #form-survey label {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    #form-survey button {
+        border: none;
+        background-color: #fe5d26;
+        width: 100%;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .form h4 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #welcome-text {
+        text-align: justify;
+    }
+
+    .welcome-link {
+        display: inline;
+        padding: 0;
+    }
+    /*MEMBERSHIP FORM-----------------------------------------*/
+
+    /*CALENDAR FILTER-----------------------------------------*/
+
+    .events-calendar {
+        color: #4ecf63;
+        border: thin solid #fe5d26;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .events-searchable-list {
+        margin: 20px;
+    }
+
+    #event-input {
+        font-size: 16px;
+        padding: 10px;
+        border: 1px solid #f2c078;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #event-ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #event-ul li a {
+            border: 1px solid #f2c078;
+            margin-top: -1px;
+            background-color: #faedca;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fe5d26;
+            display: block;
+        }
+
+            #event-ul li a:hover:not(.header) {
+                background-color: #f2c078;
+            }
+
+    #events-calendar-search-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*CALENDAR FILTER-----------------------------------------*/
+
+    /*HISTORY LIGHTBOX CSS------------------------------------*/
+    .lightbox-flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+    }
+
+    .lightbox-mobile-flex {
+        flex-wrap: nowrap;
+    }
+
+    .lightbox-child {
+        margin: 5px;
+    }
+
+    .lightbox-child-dot {
+        margin-right: 5px;
+        margin-left: 5px;
+        background-color: black;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 20px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: black;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    #space {
+        height: 30px;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Hide the slides by default */
+    .slides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 30%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Caption text */
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    img.thumbnail {
+        opacity: 0.6;
+    }
+
+    .active,
+    .thumbnail:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .lightbox-group {
+        box-sizing: border-box;
+        max-width: 1300px;
+    }
+    /*HISTORY LIGHTBOX CSS------------------------------------*/
+
+    /*ABOUT---------------------------------------------------*/
+    .about-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+    }
+
+    .about-flex-child {
+        margin: 10px;
+        background-color: #faedca;
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .about-flex-child:hover {
+        background-color: #f2c078;
+        color: #fe5d26;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .about-flex-child:hover .about-text {
+        font-size: 10vw;
+    }
+
+    .about-text {
+        font-size: 8vw;
+    }
+
+    .text-box {
+        background-color: #faedca;
+        width: 50%;
+    }
+    /*ABOUT---------------------------------------------------*/
+
+    /*PRODUCTS------------------------------------------------*/
+    #products-big-box {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    #products-big-box h3 {
+        color: #fe5d26;
+        margin: 0;
+        text-align: center;
+    }
+
+    #products-big-box p {
+        margin-top: 10;
+        margin-bottom: 0;
+        text-align: justify;
+
+    }
+
+    #products-big-box h4 {
+        margin-top: 20px;
+        margin-bottom: 0;
+        flex: auto;
+    }
+    /*PRODUCTS------------------------------------------------*/
+
+    /*AWARDS--------------------------------------------------*/
+    .awards-flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .awards-child {
+        min-width: 200px;
+        max-width: 400px;
+        height: auto;
+        margin: 10px;
+    }
+    /*AWARDS--------------------------------------------------*/
+
+    /*AWARDS--------------------------------------------------*/
+    .awards-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .awards-img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .awards-name {
+        background-color: #faedca;        
+        font-size: 9vw;
+        color: #fe5d26;
+        width: 100%;
+    }
+
+    .awards-text {
+        display: none;
+        color: #fe5d26;
+        font-size: 8vw;
+        flex-basis: 100px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .awards-img:hover {
+        background-color: #f2c078;
+        color: #fe5d26;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .awards-img:hover .awards-name {
+        font-size: 11vw;
+    }
+
+    #button-flex {
+        display: none;
+        justify-content: center;
+    }
+
+    #return {
+        background-color: #fe5d26;
+        border-radius: 0;
+        color: white;
+        border: none;
+        padding: 5px;
+        font-family: 'Tw Cen MT';
+        font-size: 8vw;
+    }
+    /*AWARDS--------------------------------------------------*/
+
+}

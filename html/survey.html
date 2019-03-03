@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <h2>Tell Us about Your Yoga Experience</h2>
+
+        <div class="form">
+            <form id="form-survey" action="welcome.html">
+                <div id="q-1">
+                    <label>How much experience do you have with the practice of yoga?</label>
+                    <textarea name="experience" rows="4" required style="display: block"></textarea>
+                    <button onclick="show_questions('q-2'); return false;">Next</button>
+                    <h4>question 1 of 5</h4>
+                </div>
+
+                <div id="q-2">
+                    <label>What is your preferred type of yoga?</label>
+                    <input name="preferred-yoga" type="text" required />
+                    <button onclick="show_questions('q-3'); return false;">Next</button>
+                    <h4>question 2 of 5</h4>
+                </div>
+
+                <div id="q-3">
+                    <label>What is your favorite way to practice yoga? Alone? In class?</label>
+                    <input name="practice" type="text" required />
+                    <button onclick="show_questions('q-4'); return false;">Next</button>
+                    <h4>question 3 of 5</h4>
+                </div>
+
+                <div id="q-4">
+                    <label>Have you ever had any formal yoga training that led to certification?</label>
+                    <input name="training" type="text" required />
+                    <button onclick="show_questions('q-5'); return false;">Next</button>
+                    <h4>question 4 of 5</h4>
+                </div>
+
+                <div id="q-5">
+                    <label>What do you hope to gain from joining this club?</label>
+                    <textarea name="gain" rows="4" required style="display: block"></textarea>
+                    <button type="submit">Submit</button>
+                    <h4>question 5 of 5</h4>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-flex">
+        <!--SOCIAL MEDIA-->
+        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+        <div class="space-between"></div>
+
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>
+                816-555-5555<br />
+                123 Main Street<br />
+                Kansas City, MO 64068<br />
+                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

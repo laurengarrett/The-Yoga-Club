@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+</div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <h2>Club Member Awards</h2>
+
+        <!--MAIN CONTENT-->
+        <div class="awards-flex">
+
+            <div id="button-flex">
+                <button id="return" type="button" onclick="stopDisplayAwards()">back</button>
+            </div>
+
+            <div class="awards-child awards-img" id="chrissie" style="background-image: url(../images/chrissie_sq.jpg)"
+                 onclick="displayAward('chrissie', 'chrissie-text')">
+                <div class="awards-name" id="chrissie-name">Chrissie</div>
+            </div>
+
+            <div class="awards-child awards-text" id="chrissie-text">
+                Chrissie Lewis won the 2018 most-improved yoga student
+                at the Liberty Yoga Studio.
+            </div>
+
+            <div class="awards-child awards-img" id="courtney" style="background-image: url(../images/courtney_sq.jpg)"
+                 onmousedown="displayAward('courtney', 'courtney-text')">
+                <div class="awards-name" id="courtney-name">Courtney</div>
+            </div>
+
+            <div class="awards-child awards-text" id="courtney-text">
+                Courtney Gracely won the student of the month award
+                at Colorado Springs premier yoga studio.
+            </div>
+
+            <div class="awards-child awards-img" id="rebekah" style="background-image: url(../images/rebekah_sq.jpg)"
+                 onmousedown="displayAward('rebekah', 'rebekah-text')">
+                <div class="awards-name" id="rebekah-name">Rebekah</div>
+            </div>
+
+            <div class="awards-child awards-text" id="rebekah-text">
+                Rebekah won the most creative yoga student award at the
+                Five Parks Yoga Nosara, Costa Rica November 2018 yoga retreat.
+            </div>
+
+            <div class="awards-child awards-img" id="lizeth" style="background-image: url(../images/lizeth_sq.jpg)"
+                 onmousedown="displayAward('lizeth', 'lizeth-text')">
+                <div class="awards-name" id="lizeth-name">Liz Eth</div>
+            </div>
+
+            <div class="awards-child awards-text" id="lizeth-text">
+                Liz Eth Mireles won the most dedicated student award
+                at New Tribe Yoga in Siloam Springs, Arkansas for the 2018 session.
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+    <div class="footer-flex">
+        <!--SOCIAL MEDIA-->
+        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+        <div class="space-between"></div>
+
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>
+                816-555-5555<br />
+                123 Main Street<br />
+                Kansas City, MO 64068<br />
+                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

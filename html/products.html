@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.theme.css" />
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/jquery-ui.js"></script>
+    
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html" class="current">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <div id="products-big-box">
+            <h2 class="">Yoga Products</h2>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#fragment-1">T-Shirts</a></li>
+                    <li><a href="#fragment-2">Hats</a></li>
+                    <li><a href="#fragment-3">Mugs</a></li>
+                </ul>
+
+                <div id="fragment-1" class="product-content">
+                    <h3>Moisture-Wicking Sleeveless Yoga Shirts</h3>
+                    <div class="product-info">
+                        <img class="product-img" src="../images/yoga_shirt_square.jpg" />
+                        <p>Enhance your yoga practice with the latest in high-performance fabrics. 
+                        All shirts from The Yoga Group shirts are moisture wicking, odor quashing, and  
+                        breathable to bring you a new level of comfort.</p>
+                        <h4>$25.00</h4>
+                    </div>
+                </div>
+
+                <div id="fragment-2" class="product-content">
+                    <h3>Fashion Beanies</h3>
+                    <div class="product-info">
+                        <img class="product-img" src="../images/yoga_hat_square.jpg" />
+                        <p>
+                            Stay warm as you come and go from the studio with a premium wool knit beanie. 
+                            Functional and fashionable, you'll make sure to have all winter. 
+                        </p>
+                        <h4>$15.00</h4>
+                    </div>
+                </div>
+
+                <div id="fragment-3" class="product-content">
+                    <h3>Signature Coffee Mugs</h3>
+                    <div class="product-info">
+                        <img class="product-img" src="../images/coffee_mug_square.jpg" />
+                        <p>
+                            Celebrate your yoga community with our new logo mugs! Available in 
+                            a variety of sizes, these hand-made coffee mugs are a great gift for 
+                            a friend--or yourself. 
+                        </p>
+                        <h4>$10.00</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="footer-flex">
+            <!--SOCIAL MEDIA-->
+            <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+            <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+            <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+            <div class="space-between"></div>
+
+            <!--CONTACT INFO-->
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <p>
+                    816-555-5555<br />
+                    123 Main Street<br />
+                    Kansas City, MO 64068<br />
+                    <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+                </p>
+            </div>
+        </div> 
+</body>
+</html>

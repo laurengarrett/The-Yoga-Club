@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html" class="current">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <h2>Group Events</h2>
+
+        <div id="events-calendar-search-flex">
+            <div class="events-calendar">
+                <div class="iframe-flex">
+                    <iframe id="calendar" class="iframe-child" src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hcj7jqv1alsaa1q170qd0oj8jg%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FChicago"
+                            style="border-width:0" width="560" height="400" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+
+            <div class="events-searchable-list">
+                <input type="text" id="event-input" onkeyup="searchEvent()" placeholder="Search for an event...">
+                <ul id="event-ul">
+                    <li><a href="../docs/rooftop_yoga.pdf" target="_blank">Rooftop Yoga</a></li>
+                    <li><a href="../docs/sunrise_yoga.pdf" target="_blank">Sunrise Yoga</a></li>
+                    <li><a href="../docs/vinyasa_flow.pdf" target="_blank">Vinyasa Flow</a></li>
+                    <li><a href="../docs/yoga_in_the_park.pdf" target="_blank">Yoga in the Park</a></li>
+                    <li><a href="../docs/yoga_retreat.pdf" target="_blank">Yoga Retreat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-flex">
+        <!--SOCIAL MEDIA-->
+        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+        <div class="space-between"></div>
+
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>
+                816-555-5555<br />
+                123 Main Street<br />
+                Kansas City, MO 64068<br />
+                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

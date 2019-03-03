@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html" class="current">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <h2>Tell Us a Little Bit about Yourself!</h2>
+
+        <div class="form">
+            <form id="form-basic-info" action="survey.html">
+
+                <div class="form-flex">
+                    <div class="form-child" id="f-fname">
+                        <label>First Name </label>
+                        <input name="fname" type="text" title="Enter a first name consisting of only letters, spaces, and/or dashes." pattern="[A-Z][A-Za-z' -]+" maxlength="20" autofocus />
+                    </div>
+
+                    <div class="form-child" id="f-lname">
+                        <label>Last Name </label>
+                        <input name="lname" type="text" title="Enter a last name consisting of only letters, spaces, and/or dashes." pattern="[A-Z][A-Za-z' -]+" maxlength="20" required />
+                    </div>
+                </div>
+
+                <div class="form-flex">
+                    <div class="form-child" id="f-street">
+                        <label>Street Address</label>
+                        <input name="street" type="text" title="Enter a valid street address." maxlength="30" pattern="[A-Za-z0-9'\.\-\s\,]" required />
+                    </div>
+                </div>
+
+                <div class="form-flex">
+                    <div class="form-child" id="f-city">
+                        <label>City</label>
+                        <input name="city" type="text" title="Enter a city name consisting of letters, spaces, and/or dashes." maxlength="30" pattern="[A-Z][A-Za-z' -]+" required />
+                    </div>
+
+                    <div class="form-child" id="f-state">
+                        <label>State</label>
+                        <select name="state" required>
+                            <option value="" disabled selected>----</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div class="form-child" id="f-zip">
+                        <label>Zip Code</label>
+                        <input name="zip" type="text" title="Enter a 5-digit zip code." pattern="^\d{5}$" required />
+                    </div>
+                </div>
+
+                <div class="form-flex">
+                    <div class="form-child" id="f-email">
+                        <label>Email</label>
+                        <input name="email" type="email" title="Email" required />
+                    </div>
+
+                    <div class="form-child" id="f-phone">
+                        <label>Phone Number</label>
+                        <input name="phone" type="text" title="Enter a phone number in the following format: xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" required />
+                    </div>
+                </div>
+
+                <div class="form-child-btn" id="f-button">
+                    <button name="submit" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-flex">
+        <!--SOCIAL MEDIA-->
+        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+        <div class="space-between"></div>
+
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>
+                816-555-5555<br />
+                123 Main Street<br />
+                Kansas City, MO 64068<br />
+                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

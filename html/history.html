@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+
+    <div class="main-content">
+        <!--LOGO AND NAVIGATION-->
+        <header>
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <a href="tutorials.html">tutorials</a>
+            </div>
+        </header>
+
+        <!--Light Thumbnails-->
+        <h2>Take a Look at Our Past Events!</h2>
+        <div class="lightbox-flex">
+            <div class="lightbox-child">
+                <img src="../images/image_1_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="lightbox-child">
+                <img src="../images/image_2_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="lightbox-child">
+                <img src="../images/image_3_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="lightbox-child">
+                <img src="../images/image_4_small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="lightbox-child">
+                <img src="../images/image_5_small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!--Close Up-->
+        <div id="main_modal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div id="space"></div>
+            <div class="modal-content">
+
+                <div class="slides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="../images/image_1_large.jpg">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="../images/image_2_large.jpg">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="../images/image_3_large.jpg">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="../images/image_4_large.jpg">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="../images/image_5_large.jpg">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="lightbox-flex lightbox-mobile-flex lightbox-tablet-flex">
+                    <div class="lightbox-child-dot">
+                        <img class="thumbnail" src="../images/image_1_large.jpg" onclick="currentSlide(1)" alt="Yoga Retreat" style="width: 100%">
+                    </div>
+
+                    <div class="lightbox-child-dot">
+                        <img class="thumbnail" src="../images/image_2_large.jpg" onclick="currentSlide(2)" alt="Vinyasa Flow" style="width: 100%">
+                    </div>
+
+                    <div class="lightbox-child-dot">
+                        <img class="thumbnail" src="../images/image_3_large.jpg" onclick="currentSlide(3)" alt="Balance" style="width: 100%">
+                    </div>
+
+                    <div class="lightbox-child-dot">
+                        <img class="thumbnail" src="../images/image_4_large.jpg" onclick="currentSlide(4)" alt="Sunrise Yoga" style="width: 100%">
+                    </div>
+
+                    <div class="lightbox-child-dot">
+                        <img class="thumbnail" src="../images/image_5_large.jpg" onclick="currentSlide(5)" alt="Relaxing Yoga" style="width: 100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-flex">
+        <!--SOCIAL MEDIA-->
+        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+        <div class="space-between"></div>
+
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>
+                816-555-5555<br />
+                123 Main Street<br />
+                Kansas City, MO 64068<br />
+                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
