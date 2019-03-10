@@ -85,13 +85,6 @@ function showSlides(n) {
 //LIGHTBOX*******************************************/
 
 //AWARDS*********************************************/
-//function displayText(id) {
-//    var box = document.getElementById(id);
-//    box.innerHTML = "new words";
-//    box.style.fontSize = '2vw';
-//    box.style.height = '100%';    
-//}
-
 function displayAward(id, id2) {
     //get all children elements in awards flexbox
     var awardsChildren = document.getElementsByClassName('awards-child');
@@ -111,24 +104,6 @@ function displayAward(id, id2) {
     //display back button
     document.getElementById('button-flex').style.display = "flex";
 }
-
-//function stopDisplayAward(id, id2) {
-//    //get all children elements in awards flexbox
-//    var awardsChildren = document.getElementsByClassName('awards-child');
-
-//    //set display to flex for all elements
-//    for (var i = 0; i < awardsChildren.length; i++) {
-//        if (i % 2 === 0) {
-//            awardsChildren[i].style.display = 'flex';
-//        }        
-//    }
-
-//    //replace box shadow on mousedover element
-//    document.getElementById(id).style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
-
-//    //hide awards text related to selected recipient
-//    document.getElementById(id2).style.display = 'none';
-//}
 
 function stopDisplayAwards() {
     //get all children elements in awards flexbox
@@ -150,5 +125,33 @@ function stopDisplayAwards() {
     //hide back button
     document.getElementById('button-flex').style.display = 'none';
 }
-
 //AWARDS*********************************************/
+
+//CONTACT********************************************/
+function showContactReceipt() {
+    document.getElementById('contact-box').style.display = 'none';
+    document.getElementById('contact-receipt').style.display = 'block';
+}
+//CONTACT********************************************/
+
+//DROWNDOWN MENUUE***********************************/
+//toggle dropdown list on and off
+function dropDown() {
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+//DROWNDOWN MENUUE***********************************/
+

@@ -30,12 +30,22 @@
                 </a>
             </div>
             <div class="ul-flex" role="navigation">
-                <a href="index.html">home</a>
+                <a href="index.html" class="current">home</a>
                 <a href="membership.html">join</a>
                 <a href="events.html">events</a>
                 <a href="products.html">products</a>
                 <a href="about.html">about</a>
-                <a href="tutorials.html" class="current">tutorials</a>
+                <div>
+                    <button class="dropbtn" onclick="dropDown()">
+                        <span class="tutorial-other">tutorials</span><span style="font-size: .7rem">&#9660</span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="tutorials.html">pdf tutorials</a>
+                        <a href="video_tutorials.html">video tutorials</a>
+                    </div>
+                </div>
+                <a href="club_officers.html">club officers</a>
             </div>
         </header>
 
@@ -121,7 +131,7 @@
 
             <!--TUTORIAL-->
             <div class="tutorial-flex">
-                <a href="tutorials.html" class="header-link"><h3 class="tutorial-text">Latest Tutorial</h3></a><hr />
+                <a href="video_tutorials.html" class="header-link"><h3 class="tutorial-text">Latest Tutorial</h3></a><hr />
                 <div class="iframe-flex">
                     <iframe id="tutorial" class="iframe-child" width="560" height="315" src="https://www.youtube.com/embed/icP-XnDCpEA?controls=0"
                             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

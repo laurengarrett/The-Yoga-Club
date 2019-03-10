@@ -58,6 +58,10 @@
         margin: 0;
         color: #4ecf63;
     }
+
+    input {
+        line-height: 22px;
+    }
     /*GENERAL-------------------------------------------------*/
 
     /*LOGO----------------------------------------------------*/
@@ -344,12 +348,12 @@
         /*display: inline-block;*/
     }
 
-    #f-fname {
+    .form-flex #f-fname {
         margin-right: 5px;
         margin-bottom: 5px;
     }
 
-    #f-lname {
+    .form-flex #f-lname {
         margin-left: 5px;
         margin-bottom: 5px;
     }
@@ -400,7 +404,7 @@
         border: none;
         background-color: #fe5d26;
         width: 100%;
-        height: 30px;
+        height: 40px;
         color: white;
         border-radius: 5px;
         margin-top: 5px;
@@ -411,7 +415,7 @@
         margin-top: 0;
     }
 
-    textarea {
+    .form textarea {
         border: none;
         width: 100%;
     }
@@ -425,7 +429,7 @@
         border: none;
         background-color: #fe5d26;
         width: 100%;
-        height: 30px;
+        height: 40px;
         color: white;
         border-radius: 5px;
         margin-top: 10px;
@@ -796,104 +800,165 @@
     }
     /*AWARDS--------------------------------------------------*/
 
-    /*TUTORIALS FLEXBOX CARDS---------------------------------*/
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    /*CONTACT-------------------------------------------------*/
+    .contact-h3 {
+        color: #fe5d26;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #form-contact {
         background-color: #faedca;
-    }
+        width: 90%;
+        max-width: 700px;
+        padding-top: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin: 20px auto 20px auto;
 
-    .cards-item {
         display: flex;
-        padding: 1rem;
-        width: 33.3333%;
+        flex-direction: column; 
+        align-items: center;
     }
 
-    .card {
-        background-color: white;
-        border-radius: 0.25rem;
-        box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .card-image {
-        height: auto;
-        max-width: 100%;
-        vertical-align: middle;
-        display: block;
-        background-size: contain;
-        padding-top: 56.25%;
-    }
-
-    .card-btn {
-        padding: 0.5rem;
-        display: block;
+    #form-contact input, textarea {
         width: 100%;
+        border: none;
+    }
+
+    .web-form-contact-child {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .form-contact-input {
+        background-color: white;
+        border: none;
+        width: 100%;
+    }
+
+    .form-contact-names {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #form-contact #f-fname, #f-lname {
+        width: 50%;
+    }
+
+    #form-contact #f-fname {
+        margin-right: 5px;
+    }
+
+    #form-contact #f-lname {
+        margin-left: 5px;
+    }
+
+    #contact-btn {
+        width: 100%;
+        margin-top: 5px;
+        height: 40px;
         border: none;
         background-color: #fe5d26;
         color: white;
         border-radius: 5px;
+    }
+
+    #contact-receipt {
+        display: none;
+        background-color: #faedca;
+        width: 90%;
+        max-width: 700px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin: 20px auto 20px auto;
+        color: #fe5d26;
+        text-align: center;
+    }
+
+    #contact-receipt a {
+        display: inline;
+        margin: 0;
+        text-decoration: underline;
+        padding: 0;
+    }
+
+    #error-msg {
+        display: none;
+    }
+    /*CONTACT-------------------------------------------------*/
+
+    /*DROPDOWN MENU-------------------------------------------*/
+    /* Dropdown Button */
+    .dropbtn {
+        border: none;
+        cursor: pointer;
+        color: #fe5d26;
         font-family: 'Tw Cen MT';
-        font-size: 1.5vw;
+        background-color: white;
+        font-size: 1.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .card-btn:hover {
-        font-size: 2vw;
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        color: #f2c078;
     }
 
-    .card-content {
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #faedca;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 1.4rem;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #fe5d26;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #fe5d26;
+        color: white;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+
+    .tutorial-dropdown {
+        font-size: 1.3em
+    }
+    /*DROPDOWN MENU-------------------------------------------*/
+
+    /*EMBEDDED TUTORIAL---------------------------------------*/
+    #videos-flex {
         display: flex;
-        flex: 1 1 auto;
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
     }
 
-    .card-title {
-        color: green;
-        font-size: 1.25rem;
-        font-weight: 300;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+    .tutorials-page {
+        flex-basis: 45%;
     }
-
-    .card-text {
-        flex: 1 1 auto;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1.25rem;
-    }
-
-    .image-1 {
-        background-image: url('../images/tutorial_1_r.jpeg');
-    }
-
-    .image-2 {
-        background-image: url('../images/tutorial_2_r.jpg');
-    }
-
-    .image-3 {
-        background-image: url('../images/tutorial_3_r.jpeg');
-    }
-
-    .image-4 {
-        background-image: url('../images/tutorial_4_r.jpg');
-    }
-
-    .image-5 {
-        background-image: url('../images/tutorial_5_r.jpeg');
-    }
-
-    .image-6 {
-        background-image: url('../images/tutorial_6_r.jpeg');
-    }
-
-    .image-7 {
-        background-image: url('../images/tutorial_7_r.jpg');
-    }
-    /*TUTORIALS FLEXBOX CARDS---------------------------------*/
+    /*EMBEDDED TUTORIAL---------------------------------------*/
 }

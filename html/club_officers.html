@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
     <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <link rel="stylesheet" type="text/css" href="../css/club_officers.css" />
     <script src="../scripts/script.js"></script>
 
     <title>The Yoga Group</title>
 </head>
 <body>
-
-    <div class="main-content">
+    <div id="grid-container">
         <!--LOGO AND NAVIGATION-->
-        <header>
+        <div class="grid-header">
             <div class="the-yoga-group">The Yoga Group</div>
             <div class="banner-flex">
                 <a href="index.html" alt="home">
@@ -27,12 +27,15 @@
                     </picture>
                 </a>
             </div>
+        </div>
+
+        <div class="grid-navigation">
             <div class="ul-flex" role="navigation">
                 <a href="index.html">home</a>
                 <a href="membership.html">join</a>
                 <a href="events.html">events</a>
                 <a href="products.html">products</a>
-                <a href="about.html" class="current">about</a>
+                <a href="about.html">about</a>
                 <div>
                     <button class="dropbtn" onclick="dropDown()">
                         <span class="tutorial-other">tutorials</span><span style="font-size: .7rem">&#9660</span>
@@ -43,49 +46,42 @@
                         <a href="video_tutorials.html">video tutorials</a>
                     </div>
                 </div>
-                <a href="club_officers.html">club officers</a>
+                <a href="club_officers.html" class="current">club officers</a>
             </div>
-        </header>
+        </div>
 
-        <div class="content">
-            <div class="about-flex">
-                <a href="history.html" class="about-flex-child" style="background-image: url('../images/image_10_square.jpg')">
-                    <div class="text-box">
-                        <div class="about-text">History</div>
-                    </div>
-                </a>
-                <a href="awards.html" class="about-flex-child" style="background-image: url('../images/image_11_square.jpg')">
-                    <div class="text-box">
-                        <div class="about-text">Awards</div>
-                    </div>
-                </a>
-                <a href="contact.html" class="about-flex-child" style="background-image: url('../images/image_12_square.jpg')">
-                    <div class="text-box">
-                        <div class="about-text">Contact</div>
-                    </div>
-                </a>
+        <div class="grid-content-whole">
+            <h2>Get to Know Our Club's Leadership</h2>
+            <ul id="grid-list">
+                <li><a href="baileigh.html">President: Baileigh Carter</a></li>
+                <li><a href="lyn.html">Vice President: Jern-Lyn Chong</a></li>
+                <li><a href="benn.html">Secretary: Benn Garrett</a></li>
+                <li><a href="emily.html">Treasurer: Emily Joyce</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-footer">
+            <div class="footer-flex">
+                <!--SOCIAL MEDIA-->
+                <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+                <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+                <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+                <div class="space-between"></div>
+
+                <!--CONTACT INFO-->
+                <div class="contact-info">
+                    <h4>Contact</h4>
+                    <p>
+                        816-555-5555<br />
+                        123 Main Street<br />
+                        Kansas City, MO 64068<br />
+                        <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-flex">
-        <!--SOCIAL MEDIA-->
-        <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
-        <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
-        <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
-
-        <div class="space-between"></div>
-
-        <!--CONTACT INFO-->
-        <div class="contact-info">
-            <h4>Contact</h4>
-            <p>
-                816-555-5555<br />
-                123 Main Street<br />
-                Kansas City, MO 64068<br />
-                <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
-            </p>
-        </div>
-    </div>
 </body>
 </html>

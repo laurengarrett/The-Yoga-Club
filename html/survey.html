@@ -34,7 +34,17 @@
                 <a href="events.html">events</a>
                 <a href="products.html">products</a>
                 <a href="about.html">about</a>
-                <a href="tutorials.html">tutorials</a>
+                <div>
+                    <button class="dropbtn" onclick="dropDown()">
+                        <span class="tutorial-other">tutorials</span><span style="font-size: .7rem">&#9660</span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="tutorials.html">pdf tutorials</a>
+                        <a href="video_tutorials.html">video tutorials</a>
+                    </div>
+                </div>
+                <a href="club_officers.html">club officers</a>
             </div>
         </header>
 
@@ -72,7 +82,7 @@
 
                 <div id="q-5">
                     <label>What do you hope to gain from joining this club?</label>
-                    <textarea name="gain" rows="4"  style="display: block"></textarea>
+                    <textarea name="gain" rows="4" style="display: block"></textarea>
                     <button type="submit">Submit</button>
                     <h4>question 5 of 5</h4>
                 </div>

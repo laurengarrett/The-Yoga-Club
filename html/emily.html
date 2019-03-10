@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/web.css" />
+    <link rel="stylesheet" type="text/css" href="../css/club_officers.css" />
+    <script src="../scripts/script.js"></script>
+
+    <title>The Yoga Group</title>
+</head>
+<body>
+    <div class="grid-container-in">
+        <!--LOGO AND NAVIGATION-->
+        <div class="grid-header">
+            <div class="the-yoga-group">The Yoga Group</div>
+            <div class="banner-flex">
+                <a href="index.html" alt="home">
+                    <picture>
+                        <source srcset="../images/logo_125.png" media="(max-width: 399px)" />
+                        <!--<source srcset="../images/logo_400.png" media="(min-width: 799px)" />-->
+                        <source srcset="../images/logo_250.png" media="(min-width: 400px)" />
+                        <img src="../images/logo_250.png" alt="logo, the yoga group" />
+                    </picture>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid-navigation">
+            <div class="ul-flex" role="navigation">
+                <a href="index.html">home</a>
+                <a href="membership.html">join</a>
+                <a href="events.html">events</a>
+                <a href="products.html">products</a>
+                <a href="about.html">about</a>
+                <div>
+                    <button class="dropbtn" onclick="dropDown()">
+                        <span class="tutorial-other">tutorials</span><span style="font-size: .7rem">&#9660</span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="tutorials.html">pdf tutorials</a>
+                        <a href="video_tutorials.html">video tutorials</a>
+                    </div>
+                </div>
+                <a href="club_officers.html" class="current">club officers</a>
+            </div>
+        </div>
+
+        <div class="grid-club-member-in">
+            <div class="grid-content-pic-in">
+                <img class="grid-image" src="../images/emily.jpg" alt="Emily Joyce" />
+            </div>
+
+            <div class="grid-content-info-in">
+                <div>
+                    <h2>Emily Joyce</h2>
+                    <h3>Treasurer</h3>
+                </div>
+                <div class="info-piece">Location: Kansas City, Missouri</div>
+                <div class="info-piece">Years Member: 2</div>
+                <div class="info-piece">Awards: Most Valuable Member (2018), Yoga Student of the Month (July 2017) - Liberty Yoga Studio</div>
+            </div>
+        </div>
+
+        <div class="grid-footer">
+            <div class="footer-flex">
+                <!--SOCIAL MEDIA-->
+                <a href="https://www.facebook.com/" target="_blank" id="social-1"><img class="social-child" src="../images/facebook_72.png" alt="facebook" /></a>
+                <a href="https://twitter.com/?lang=en" target="_blank" id="social-2"><img class="social-child" src="../images/twitter_72.png" alt="twitter" /></a>
+                <a href="https://www.instagram.com/" target="_blank" id="social-3"><img class="social-child" src="../images/insta_72.png" alt="instagram" /></a>
+
+                <div class="space-between"></div>
+
+                <!--CONTACT INFO-->
+                <div class="contact-info">
+                    <h4>Contact</h4>
+                    <p>
+                        816-555-5555<br />
+                        123 Main Street<br />
+                        Kansas City, MO 64068<br />
+                        <address href="mailto:theyogagroup@gmail.com">theyogagroup@gmail.com</address>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
